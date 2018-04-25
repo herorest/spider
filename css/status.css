@@ -1,0 +1,39 @@
+.wrap .content .status{
+    height:62px;
+    line-height:62px;
+    background:#fff;
+    padding:0 0 0 80px;
+    font-size:14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position:relative;
+    z-index:10;
+}
+.wrap .content .status.normal{
+    background:url(../images/icon.png) #fff 30px -277px no-repeat;
+}
+.wrap .content .status.error{
+    background:url(../images/icon.png) #fff 30px -337px no-repeat;
+}
+.wrap .content .status.wait{
+    background:url(../images/load.gif) #fff 38px 20px no-repeat;
+}
+.toggle-menu{
+    font-size:18px;
+    position:absolute;
+    top:50%;
+    left:20px;
+    margin-top:-9px;
+}
+.login-menu{
+    height:40px;
+    line-height:40px;
+    position:absolute;
+    right:25px;
+    bottom:11px;
+    cursor:pointer;
+}
+.login-menu .login{
+    width:100%;
+    height:100%;
+    display:block;
+}

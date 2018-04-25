@@ -1,0 +1,334 @@
+.container{
+    width: 100%;
+    height:100%;
+    min-height: 100%;
+}
+.layout {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    overflow: auto;
+    background: #f0f2f5;
+}
+.container{
+    min-height:680px;
+}
+.wrap{
+    width:100%;
+    height:100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.wrap .side{
+    width:218px;
+    flex:0 0 218px;
+    position: relative;
+    background: #001529;
+    min-width: 0
+}
+.wrap .side .logo{
+    height:62px;
+    background:url(../images/logo.jpg) no-repeat;
+}
+.wrap .side .logo a{
+    width:168px;
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
+
+.wrap .main{
+    width:100%;
+    height:-moz-calc(100% - 62px - 20px);
+    height:-webkit-calc(100% - 62px - 20px);
+    height:calc(100% - 62px - 20px);
+    position:relative;
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+/*状态*/
+.wrap .content{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+/*图表*/
+.view{
+    width: 100%;
+    /*height:100%;*/
+    margin:20px auto 0;
+    padding:3px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position:relative;
+
+}
+.view_box{
+    width:49%;
+    overflow:hidden;
+    background:#fff;
+    display:inline-block;
+    margin:0 0 2%;
+    position:relative;
+}
+.view_box:nth-child(odd){
+    margin-right:2%;
+}
+.view_box_table,.view_box_proxy{
+    width:64%;
+}
+.view_box_table + .view_box,.view_box_proxy + .view_box{
+    width:34%;
+}
+.view_chart_title{
+    float:left;
+    line-height:52px;
+    font-size:15px;
+    color:#474747;
+    padding:0 10px;
+}
+.view_box:nth-child(1) .view_chart_title,.view_box:nth-child(2) .view_chart_title{
+    line-height:51px;
+    border-bottom:2px #1890ff solid;
+    color:#1890ff;
+}
+.view_title{
+    height:52px;
+    padding:0 0 0 16px;
+    position:relative;
+    border-bottom:1px #e8e8e8 solid;
+}
+.view_chart{
+    width:96%;
+    height:316px;
+    margin:0 auto;
+    position:relative;
+    padding:10px 0;
+}
+.view_box_table .view_chart{
+    padding:25px 0 0;
+}
+
+.view_chart_content{
+    height:340px;
+    padding:0 0 10px;
+}
+.view_chart_content_h{
+    height:720px;
+}
+
+.view_chart_time{
+    position:absolute;
+    top:0px;
+    right:4%;
+    z-index:10;
+}
+.view_chart_time a{
+    font-size:13px;
+    color:#0a0a0a;
+    padding:0 10px;
+    line-height:52px;
+    display:inline-block;
+}
+.view_chart_time a:hover{
+    color:#2e68ff;
+}
+.view_chart_time .ant-calendar-picker{
+    margin-right:20px;
+}
+.view_chart_label{
+    height:42px;
+    font-size:14px;
+    color:#474747;
+    float:right;
+    margin-left:20px;
+}
+.view_chart_label span{
+    height:42px;
+    line-height:42px;
+    display:block;
+    float:left;
+}
+.view_chart_select{
+    height:40px;
+    line-height:16px;
+    font-size:14px;
+    padding:12px 25px 12px 20px;
+    border:1px #ccc solid;
+    color:#474747;
+    position:relative;
+    cursor: pointer;
+    border-radius:3px;
+    margin-left:10px;
+    float:left;
+}
+.view_chart_select i{
+    width:6px;
+    height:3px;
+    overflow:hidden;
+    position:absolute;
+    right:10px;
+    top:18px;
+    background:url(../images/icon.png) no-repeat 0 -424px;
+}
+.view_chart_filter{
+    width:360px;
+    position:absolute;
+    right:0;
+    top:46px;
+}
+.view_chart_filter .ant-calendar-picker{
+    width:280px;
+}
+.view_chart_filter .popover-inner{
+    padding:10px;
+    background:#fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2)
+}
+.view_chart_filter .popover-arrow{
+    position: absolute;
+    top:-4px;
+    right:20px;
+    border-top-width: 0;
+    border-bottom-color: hsla(0,0%,85%,.7);
+    top: -10px;
+    border-width:5px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    box-sizing: border-box;
+}
+.view_chart_filter .popover-arrow:after{
+    content: " ";
+    top: 1px;
+    margin-left: -34px;
+    border-top-width: 0;
+    border-bottom-color: #fff;
+    border-width:4px;
+}
+.view_chart_filter .ant-slider{
+    width:310px;
+    float:right;
+}
+.view_chart_filter .btns{
+    margin-top:10px;
+    padding:10px 0 0;
+    border-top:1px dashed #ccc;
+    text-align:right;
+}
+.view_chart canvas{
+    margin-left:-1%!important;
+}
+.view_content{
+    width:100%;
+    height:calc(100% - 60px);
+    position:relative;
+
+}
+.view_box li .cover,.view_list_box li .cover{
+    width:100%;
+    height:100%;
+    background:#e5e5e5;
+    color:#474747;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow:Hidden;
+}
+.view_box li .blue,.view_list_box li .blue{
+    width:100%;
+    height:100%;
+    background:#367aec;
+    color:#fff;
+    border-radius:10px;
+    overflow:hidden;
+}
+.view_box .add{
+    width:100%;
+    height:100%;
+    line-height:47px;
+    background:#132837;
+    color:#fff;
+    display:block;
+    border-radius:5px;
+    text-align: center;
+}
+.view_scroll{
+    padding:0 0 1px;
+}
+
+.view_detail_box .ant-modal-body{
+    padding:40px 16px 5px;
+}
+.view_detail_box .ant-switch{
+    margin-left:20px;
+}
+.ant-modal li.error{
+    line-height:35px;
+}
+
+
+
+/*总入库*/
+.view_chart_total{
+    width:100%;
+    line-height:50px;
+    font-size:24px;
+    position:absolute;
+    top:60px;
+    left:0;
+    text-align:center;
+}
+.view_chart_total span{
+    display:inline-block;
+    font-size:13px;
+    color:#8f8f8f;
+    padding:0 10px 0 0;
+    vertical-align:middle;
+}
+
+/*状态*/
+.ant-table .normal:before,.ant-table .error:before{
+    width:5px;
+    height:5px;
+    background:rgb(82,196,26);
+    display:inline-block;
+    vertical-align: middle;
+    content:'';
+    margin:0 5px 0 0;
+    border:1px solid rgb(82,196,26);
+    border-radius:999px;
+    overflow:hidden;
+}
+.ant-table .error:before{
+    background:#f00;
+    border:1px solid #f00;
+}
+
+@media all and (max-width:1367px){
+    .wrap .login{
+        background:url(/images/icon.png) 45px -233px;
+        padding:0 0 0 80px;
+    }
+}

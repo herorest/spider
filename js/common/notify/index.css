@@ -1,0 +1,108 @@
+.notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+}
+.notification.notification-center {
+    top: 50%;
+    margin-top: -20px;
+}
+.notification-notice {
+    padding: 10px 15px 10px 10px;
+    border-radius: 3px 3px;
+    border: 1px solid #999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 0px solid rgba(0, 0, 0, 0);
+    background: #fff;
+    display: block;
+    width: auto;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+    right: 50%;
+}
+.notification-notice-img {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    width: 30px;
+}
+.notification-notice-img-alert{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAJFBMVEUAAAD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgAlXhiyAAAAC3RSTlMAd0O8MtVm6YgZVUzmN9cAAACqSURBVBjTYwCDxOrd28UY4EB6NwhshHHVdwc6MLCI7i6CcBl3m4Bp5d0CENUghQgG224FKJ9pdwKQ9N4EN1d7C5CIFoDzGbcClQMxHEQnMDBDlO+GaDBgmF2AxGffybC6AYnPsYuhewESn2sHg7UDEp9lM4P1BCQ+JwYfXT26eTD7GKD2wdzDAHUPunth/tkN9Q+af9HDAz28MMMTEd7OuwXQ4wMzvtDjEwDTlUH0ymJoBgAAAABJRU5ErkJggg==) no-repeat;
+}
+.notification-notice-img-success{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAV1BMVEUAAACJ0WqH0GiI0WmH0Gj9//z///////////////+H0GiH0GiH0Gj6/fn///77/vr6/vn5/viH0GiJ0mqi24qH0GiP1HKH0Gjw+eyH0Gic2YKw4ZyR1HWjngPfAAAAGXRSTlMAQzNmdxgJAQQP1enBIjUuVkKIVfERJKx57jzgDQAAAXJJREFUKM+FU4F2gjAMjEiaBGkL6tSo//+duwAbzm2P8Hh9cL3LNUlpjX17cMSh3dPvaP0l2jdwB2LXNoRo2g4Suzdq37xs7n8ItMvX33/27rOWyCrgvjhsFlRJ8JKoyozP6brQAWRcJNakSbC03s3SsYhJNQ6NWiypJdFuku99B1E1SxbSxuAqD5ZO3hN9+EEUf81EJNjKpvwYOfHBP+jkx9iedLGsnHM++6OYHf1ER98zhZ00OVYR5rvfRyQBk66+M5jWEvKEPHUAakWSNH6FswsIlu+3ocCDBHoeMuTo4n3AcaqHPwdWUa7gUkEuCjjEwREGXketN6B5EA6nIQ57SvA+nP051gy0FM0MNA4Vr5IZcoIfnmtRnqoezKks0apcxrM7TsT6VQKUZSkqdtcR/HvOKQVVomf90pII2BsfnMwATdpoyXdDJR7JrLzMRDT0dRzUZNIMeB2HdZhkVliHaWMU/xvkpge6eQ22L9HGFfwEHlsb0vAVX14AAAAASUVORK5CYII=) no-repeat;
+}
+.notification-notice-img-error{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAMFBMVEUAAAD/VQD/VgH/VQD/VQD/VQD/VQD/VQD/VQD/VQD/VQD/VQD/VQD/civ/u5n/bycH6womAAAADHRSTlMAd0Qz1WbpwYhVGaztOrrJAAAAvklEQVQY02MAg8CcM8dEGeBA5gwIHIRx1c44GjAwi5xJgnAZzxSDafUzAhDVIIUIBusZBSif6UwAkLQ5BDdX5zCQ8BGA8xmPAJUDMRz4BDCwg5Q/AGI+kIYChjUJQOZZIPsOUJDtFMOcBhD7AgMvSIzjJEPPBAYGIAcoBKQ5TzDsMWAAKfh/FkQxn2aoWQBi8J/5AKK4jqPz0dWjm4duH7p70N2L7h80/6KHB3p4YYYnIrzNzwigxwdmfKHHJwDXAlhlOhz98AAAAABJRU5ErkJggg==) no-repeat;
+}
+.notification-notice-img-message{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAJ1BMVEUAAAAtt/Utt/Utt/Utt/Utt/Utt/Utt/Utt/Utt/Utt/Utt/Utt/XkdivfAAAADHRSTlMAdy9E1WbpwYhVrBF8nX6eAAAAvElEQVQY02MAg8CcM8dEGeBA5gwIHIRxzc44KjAwiZxJhnAZzxSBafMzAhDVIIUIBusZAyif+UwAkNQ5DDfX5hCQ8BGA8xmPAJUfATNdwKRPAAM7RPkZiIYChj0JDAjAdpphTgMSn+MkQ88EEIMHop7zBMMaBSQ+0ymGGgUk85iOY/DXoPBPQc1jgJkHs+8M1D6Ye87A3MN+GGLfAah7WY8g8X0C0PyLHh7o4YUZnojwVj8jgB4fmPGFHp8AeehIJZw9NB0AAAAASUVORK5CYII=) no-repeat;
+}
+.notification-notice-content {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 0 0 15px;
+    color: #666;
+}
+.notification-fade-enter {
+    opacity: 0;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    -webkit-animation-name: rcNotificationFadeIn;
+    animation-name: rcNotificationFadeIn;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.notification-fade-leave {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+    -webkit-animation-name: rcDialogFadeOut;
+    animation-name: rcDialogFadeOut;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+@-webkit-keyframes rcNotificationFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes rcNotificationFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes rcDialogFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes rcDialogFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

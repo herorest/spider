@@ -1,0 +1,308 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+.w1240{
+    width:1240px;margin:0 auto;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden], template {
+    display: none;
+}
+a {
+    background-color: transparent;
+}
+a:active, a:hover {
+    outline: 0;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 1em 40px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+pre {
+    overflow: auto;
+}
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+}
+optgroup {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, th {
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height:100%;
+    min-height: 100%;
+    min-width:1365px;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666;
+    overflow:auto;
+    background-color: #fff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+::-moz-selection {
+    background: #2db7f5;
+    color: #fff;
+}
+::selection {
+    background: #2db7f5;
+    color: #fff;
+}
+a {
+    color: #2db7f5;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover {
+    color: #57c5f7;
+}
+a:active {
+    color: #2baee9;
+}
+a:link, a:visited, a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+a[disabled] {
+    color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.unselect{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+.clearfix, .layout-fixed, .layout-fluid, .row, .ant-form-horizontal .ant-form-item {
+    zoom: 1;
+}
+.clearfix:before, .clearfix:after, .layout-fixed:before, .layout-fixed:after, .layout-fluid:before, .layout-fluid:after, .row:before, .row:after, .ant-form-horizontal .ant-form-item:before, .ant-form-horizontal .ant-form-item:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after, .layout-fixed:after, .layout-fluid:after, .row:after, .ant-form-horizontal .ant-form-item:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+.invisible {
+    visibility: hidden;
+}
+code, kbd, pre, samp {
+    font-family: Consolas, Menlo, Courier, monospace;
+}
+.trans{
+    -webkit-transition:all ease 0.2s;
+    -moz-transition:all ease 0.2s;
+    -ms-transition:all ease 0.2s;
+    transition:all ease 0.2s;
+}
+.iScrollIndicator{
+    background:rgba(0,0,0,0.1)!important;
+}
+.view_modal .btns{
+    font-size:0;
+    border-top:1px #ccc solid;
+    margin:30px 0 0;
+}
+.view_modal .btns a{
+    width:50%;
+    height:45px;
+    line-height:45px;
+    font-size:16px;
+    background:none;
+    color:#919191;
+    border:0;
+    display:inline-block;
+}
+.view_modal .btns a.red{
+    color:#db4440;
+}
+.form li{
+    line-height:28px;
+    margin-top:8px;
+}
+.form li .form_t{
+    width:78px;
+    font-size:14px;
+    float:left;
+    text-align:left;
+}
+.form li .form_t i{
+    color:#f00;
+    padding:0 5px 0 0;
+}
+.form li .form_c{
+    width:184px;
+    float:left;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e6e6e6
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
